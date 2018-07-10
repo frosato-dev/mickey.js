@@ -1,3 +1,4 @@
+var _ = require('lodash');
 var DOMObserver = require('./dom-observer');
 var { Box, createBox } = require('./box');
 var { $first, $find, $rmvClass, $addClass } = require('./dom');

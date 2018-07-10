@@ -11,6 +11,9 @@
   ],
   "main": "./src/mickey.js",
   "browser": "./dist/mickey.js",
+  "dependencies": {
+    "lodash": "2.4.2"
+  },
   "devDependencies": {
     "webpack": "^1.4.0-beta5",
     "webpack-traceur-loader": "^0.3.0"

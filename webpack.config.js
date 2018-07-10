@@ -5,7 +5,7 @@ module.exports = {
   entry: "./src/mickey.js",
   output: {
     library: "Mickey",
-    libraryTarget: "umd",
+    libraryTarget: "commonjs",
   },
   module: {
     loaders: [
