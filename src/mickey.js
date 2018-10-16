@@ -264,6 +264,9 @@ function Mickey(parent, options) {
     var newLimit  = isLimit(newEl);
     var shiftArea = newAr !== memAr;
 
+    $rmvClass(newEl, options.trackClass);
+    $addClass(newEl, options.hoverClass, !newLimit);
+
     if (shiftArea) {
       mouse.ar = newAr;
       $rmvClass(memAr, options.areaClass);
@@ -279,9 +282,6 @@ function Mickey(parent, options) {
       dispatchEvent(memEl, 'mouseout');
       dispatchEvent(newEl, 'mouseover');
     }
-
-    $rmvClass(newEl, options.trackClass);
-    $addClass(newEl, options.hoverClass, !newLimit);
 
     if (newLimit && checkLimit(newEl, dir)) {
       mouse.click(el);
